@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Functional Programing with Array</title>
+</head>
+<body>
+    <script>
+        //Given an input array
+        var array =  [10, 8, 12, 36];
+        console.log("Initial array is : " + array);
+
+        //Doubling the values using "map" function
+        var dblArray = array.map(function(x){ return x * 2; });
+        console.log("Array after doubling is : " + dblArray);
+        
+        //Filter the values > 20 using "filter" function
+        var filteredArray = dblArray.filter(function(y){ return y > 20; });
+        console.log("Filtered Array is : " + filteredArray);
+        
+        //Calculate the sum of filtered array using "reduce" function
+        var sum = filteredArray.reduce(function(a , b){ return a + b; });
+        console.log("The sum of filtered array is : " + sum);
+    </script>
+</body>
+</html>
